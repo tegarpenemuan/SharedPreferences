@@ -30,4 +30,9 @@ class PreferencesHelper (context: Context) {
     fun getBoolean(key: String):Boolean? {
         return sharedpref.getBoolean(key,false)
     }
+
+    fun clear() {
+        editor.clear()
+            .apply()
+    }
 }
